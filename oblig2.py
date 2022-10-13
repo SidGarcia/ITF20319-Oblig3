@@ -1,20 +1,20 @@
 import pytest
 
-##year = int(input("Enter a year: "))
-##year = 2000
-##class LeapyearClass:
-##def isLeapYear(year: int):
-def isLeapYear():
-    ##yearinput = int(input("Enter a year: "))
-    ##for i in range(2000,2020):
-    ##stdout("Leap Year Checker")
-    ##year = int(input("Enter a year: "))
-    return int(2000)
-##LeapyearClass().leapyear_test(2000)
-##year = int(input("Enter a year: "))
-isLeapYear()
-##leapyear_test()
-##def isLeapYear(x: int):
-##    x = leapyear_test()
-##assert x 
-##    return 1
+year = int(2000)
+
+def isLeapYear(n: int):
+    if year % 4 == 0 and year % 100 > 0:
+        print(str(year) + " is a leap year!")
+        return True
+    elif year % 400 == 0:
+        print(str(year) + " is a leap year!")
+        return True
+    elif year % 4 > 0:
+        print(str(year) + " is not a leap year!")
+        return False
+    elif year % 100 == 0 and year % 400 > 0:
+        print(str(year) + " is not a leap year!")
+        return False
+    else:
+        print(str(year) + " is a leap year!")
+        return False
